@@ -1,7 +1,7 @@
 <template>
 
 <div>
-  <h1>Babylon Standard Materials</h1>
+  <h1>Custom Models</h1>
   <canvas></canvas>
 </div>
 
@@ -9,13 +9,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { PBR } from '@/BabylonExamples/PBR';
+import { CustomModels } from '@/BabylonExamples/CustomModels';
 
 export default defineComponent({
   name: 'BabylonExamples',
   mounted(){
     const canvas=document.querySelector("canvas")!;
-    new PBR(canvas);
+    new CustomModels(canvas);
   }
   
 });
