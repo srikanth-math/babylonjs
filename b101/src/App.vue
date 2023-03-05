@@ -1,36 +1,37 @@
 <template>
 <div id="app">
-  <BabylonExamples />
+  <ProductPreview />
 </div>  
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import BabylonExamples from './components/BabylonExamples.vue';
+import ProductPreview from './components/ProductPreview.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    BabylonExamples
+    ProductPreview
   }
 });
 </script>
 
 <style>
 * {
-  padding:0;
-  margin:0;
-  background-image: url("../public/images/Background_Dots.png");   
-  background-size: cover;
-  background-position:center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 #app {
-  width:100%;
-  height:100%; 
-  display:flex;
-  justify-content: center;
-  align-items: center; 
-  margin-top:4rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-image: url("../public/images/Background_Dots.png");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem; */
 }
-
 </style>
