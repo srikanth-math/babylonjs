@@ -7,12 +7,12 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { PhysicsImpostors } from "@/BabylonExamples/PhysicsImpostors";
+import { CollisionsTriggers } from "@/BabylonExamples/CollisionsTriggers";
 export default defineComponent({
   name: "BabylonExamples2",
   mounted() {
     const canvas = document.querySelector("canvas") as HTMLCanvasElement;
-    new PhysicsImpostors(canvas);
+    new CollisionsTriggers(canvas);
   },
 });
 </script>
