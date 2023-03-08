@@ -1,18 +1,18 @@
 <template>
   <main>
-    <p>FPC</p>
+    <p>Physics Impostors</p>
     <canvas></canvas>
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { FirstPersonController } from "@/BabylonExamples/FirstPersonController";
+import { PhysicsImpostors } from "@/BabylonExamples/PhysicsImpostors";
 export default defineComponent({
   name: "BabylonExamples2",
   mounted() {
     const canvas = document.querySelector("canvas") as HTMLCanvasElement;
-    new FirstPersonController(canvas);
+    new PhysicsImpostors(canvas);
   },
 });
 </script>
