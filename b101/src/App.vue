@@ -29,9 +29,9 @@ export default defineComponent({
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* background-image: url("../public/images/Background_Dots.png");
+  background-image: url("../public/images/Background_Dots.png");
   background-size: cover;
   background-position: center;
-  padding: 2rem; */
+  padding: 2rem;
 }
 </style>
