@@ -11,7 +11,9 @@
     "@babylonjs/core": "^5.48.0",
     "@babylonjs/loaders": "^5.49.0",
     "@types/cannon": "^0.1.8",
-    "cannon": "^0.6.2",
+    "ammo.js": "github:kripken/ammo.js",
+    "ammojs-typed": "^1.0.6",
+    "node-polyfill-webpack-plugin": "^2.0.1",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -24,5 +26,9 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "typescript": "~4.5.5"
+  },
+  "browser": {
+    "fs": false,
+    "path": false
   }
 }

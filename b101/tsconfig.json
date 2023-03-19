@@ -2,14 +2,22 @@
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "noImplicitAny": true,
     "jsx": "preserve",
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictPropertyInitialization": false,
     "importHelpers": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,    
     "useDefineForClassFields": true,
     "sourceMap": true,
     "baseUrl": ".",
@@ -37,5 +45,6 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "typeRoots": ["node_modules/ammojs-typed/ammo/ambient"]
 }
