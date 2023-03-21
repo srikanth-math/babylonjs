@@ -1,18 +1,18 @@
 <template>
   <main>
-    <p>Cutscene</p>
+    <p>AnimEvents</p>
     <canvas></canvas>
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { Cutscene } from "@/BabylonExamples/Cutscene";
+import { AnimEvents } from "@/BabylonExamples/AnimEvents";
 export default defineComponent({
   name: "BabylonExamples2",
   mounted() {
     const canvas = document.querySelector("canvas") as HTMLCanvasElement;
-    new Cutscene(canvas);
+    new AnimEvents(canvas);
   },
 });
 </script>
@@ -21,8 +21,10 @@ export default defineComponent({
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;700&display=swap");
 main {
-  width: 70%;
-  display: flex;
+  width: 100%;
+  top:0;
+  right:0;
+  display: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -75,6 +77,7 @@ canvas {
   height: 100%;
   border: none;
   outline: none;
-  box-shadow: 8px 8px 10px -6px #000000;
+  margin: 0;
+  padding: 0;
 }
 </style>
